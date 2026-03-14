@@ -1,11 +1,119 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect, useCallback } from "react";
+import { ChevronUp, ChevronDown } from "lucide-react";
+import SlideHero from "@/components/slides/SlideHero";
+import SlideProblem from "@/components/slides/SlideProblem";
+import SlideSolutions from "@/components/slides/SlideSolutions";
+import SlideYouTube from "@/components/slides/SlideYouTube";
+import SlideBenefits from "@/components/slides/SlideBenefits";
+import SlideModeration from "@/components/slides/SlideModeration";
+import SlideTeam from "@/components/slides/SlideTeam";
+
+const slides = [SlideHero, SlideProblem, SlideSolutions, SlideYouTube, SlideBenefits, SlideModeration, SlideTeam];
 
 const Index = () => {
+  const [current, setCurrent] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const goTo = useCallback(
+    (index: number) => {
+      if (isAnimating || index < 0 || index >= slides.length) return;
+      setIsAnimating(true);
+      setCurrent(index);
+      setTimeout(() => setIsAnimating(false), 700);
+    },
+    [isAnimating]
+  );
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowDown" || e.key === "ArrowRight" || e.key === " ") {
+        e.preventDefault();
+        goTo(current + 1);
+      }
+      if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        goTo(current - 1);
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [current, goTo]);
+
+  useEffect(() => {
+    let touchStartY = 0;
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartY = e.touches[0].clientY;
+    };
+    const handleTouchEnd = (e: TouchEvent) => {
+      const delta = touchStartY - e.changedTouches[0].clientY;
+      if (Math.abs(delta) > 50) {
+        goTo(current + (delta > 0 ? 1 : -1));
+      }
+    };
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [current, goTo]);
+
+  useEffect(() => {
+    const handleWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      if (Math.abs(e.deltaY) > 30) {
+        goTo(current + (e.deltaY > 0 ? 1 : -1));
+      }
+    };
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, [current, goTo]);
+
+  const CurrentSlide = slides[current];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="h-screen w-screen overflow-hidden bg-background relative">
+      {/* Slide */}
+      <div
+        className="w-full h-full transition-opacity duration-500"
+        key={current}
+        style={{ animation: "fade-in 0.5s ease-out" }}
+      >
+        <CurrentSlide />
+      </div>
+
+      {/* Navigation dots */}
+      <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+              i === current
+                ? "bg-slide-accent scale-125 shadow-[0_0_8px_hsl(190_90%_50%/0.5)]"
+                : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
+            }`}
+            aria-label={`Slajd ${i + 1}`}
+          />
+        ))}
+      </div>
+
+      {/* Arrow navigation */}
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex gap-2">
+        <button
+          onClick={() => goTo(current - 1)}
+          disabled={current === 0}
+          className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-20 transition-all"
+        >
+          <ChevronUp className="w-5 h-5" />
+        </button>
+        <button
+          onClick={() => goTo(current + 1)}
+          disabled={current === slides.length - 1}
+          className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-foreground disabled:opacity-20 transition-all"
+        >
+          <ChevronDown className="w-5 h-5" />
+        </button>
       </div>
     </div>
   );

@@ -78,7 +78,8 @@
   }
 
   .glass-card {
-    @apply rounded-2xl border border-border/50;
+    border-radius: 1rem;
+    border: 1px solid hsl(var(--border) / 0.5);
     background: hsl(var(--card) / 0.6);
     backdrop-filter: blur(20px);
   }

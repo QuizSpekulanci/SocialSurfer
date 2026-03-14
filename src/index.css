@@ -106,7 +106,9 @@
   }
 
   .slide-number {
-    @apply text-sm tracking-widest uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     font-family: 'Space Grotesk', monospace;
     color: hsl(var(--slide-accent) / 0.6);
   }

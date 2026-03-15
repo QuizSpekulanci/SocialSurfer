@@ -1,20 +1,22 @@
 import SlideLayout from "@/components/SlideLayout";
-import moderationImg from "@/assets/moderation-illustration.jpg";
+import blob1 from "@/assets/blob-decoration-1.png";
 import { ShieldCheck, Flag, Eye } from "lucide-react";
 
 const SlideModeration = () => {
   return (
     <SlideLayout slideNumber={6} totalSlides={7}>
-      <div className="slide-number mb-6">FAQ</div>
-      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-12">
-        Moderacja i <span className="text-slide-accent">bezpieczeństwo</span>
+      <img src={blob1} alt="" className="absolute bottom-0 right-0 w-56 opacity-30 pointer-events-none" />
+
+      <div className="slide-number mb-4">FAQ</div>
+      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
+        Moderacja i <span className="gradient-text">bezpieczeństwo</span>
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col gap-6">
+      <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="flex flex-col gap-5">
           <div className="flex items-start gap-5 glass-card p-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="w-12 h-12 rounded-xl bg-slide-accent/10 flex items-center justify-center shrink-0 mt-1">
-              <ShieldCheck className="w-6 h-6 text-slide-accent" />
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 mt-1" style={{ background: "var(--slide-gradient-bar)" }}>
+              <ShieldCheck className="w-6 h-6 text-white" />
             </div>
             <div>
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">Automatyczna weryfikacja</h3>
@@ -25,8 +27,8 @@ const SlideModeration = () => {
           </div>
 
           <div className="flex items-start gap-5 glass-card p-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="w-12 h-12 rounded-xl bg-slide-warm/10 flex items-center justify-center shrink-0 mt-1">
-              <Flag className="w-6 h-6 text-slide-warm" />
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 mt-1" style={{ background: "linear-gradient(135deg, hsl(310 80% 55%), hsl(340 85% 55%))" }}>
+              <Flag className="w-6 h-6 text-white" />
             </div>
             <div>
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">System zgłoszeń</h3>
@@ -37,8 +39,8 @@ const SlideModeration = () => {
           </div>
 
           <div className="flex items-start gap-5 glass-card p-6 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <div className="w-12 h-12 rounded-xl bg-slide-accent/10 flex items-center justify-center shrink-0 mt-1">
-              <Eye className="w-6 h-6 text-slide-accent" />
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 mt-1" style={{ background: "linear-gradient(135deg, hsl(240 70% 55%), hsl(270 80% 60%))" }}>
+              <Eye className="w-6 h-6 text-white" />
             </div>
             <div>
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">Transparentność</h3>
@@ -49,8 +51,10 @@ const SlideModeration = () => {
           </div>
         </div>
 
-        <div className="flex justify-center animate-slide-in-right">
-          <img src={moderationImg} alt="Moderation" className="rounded-2xl max-w-sm w-full glow-accent" />
+        <div className="flex justify-center items-center">
+          <div className="w-56 h-56 rounded-3xl flex items-center justify-center" style={{ background: "var(--slide-gradient-bar)" }}>
+            <ShieldCheck className="w-20 h-20 text-white" />
+          </div>
         </div>
       </div>
     </SlideLayout>

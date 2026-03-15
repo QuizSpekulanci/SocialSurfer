@@ -63,7 +63,6 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         "slide-accent": "hsl(var(--slide-accent))",
-        "slide-accent-glow": "hsl(var(--slide-accent-glow))",
         "slide-warm": "hsl(var(--slide-warm))",
       },
       borderRadius: {

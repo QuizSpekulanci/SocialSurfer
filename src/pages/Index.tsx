@@ -90,7 +90,7 @@ const Index = () => {
             onClick={() => goTo(i)}
             className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
               i === current
-                ? "bg-slide-accent scale-125 shadow-[0_0_8px_hsl(190_90%_50%/0.5)]"
+                ? "bg-primary scale-125 shadow-[0_0_8px_hsl(24_95%_53%/0.5)]"
                 : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
             }`}
             aria-label={`Slajd ${i + 1}`}

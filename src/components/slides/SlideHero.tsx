@@ -1,30 +1,29 @@
 import SlideLayout from "@/components/SlideLayout";
-import heroWave from "@/assets/hero-wave.jpg";
+import blob1 from "@/assets/blob-decoration-1.png";
+import blob2 from "@/assets/blob-decoration-2.png";
 
 const SlideHero = () => {
   return (
     <SlideLayout slideNumber={1} totalSlides={7}>
-      {/* Hero background image */}
-      <div className="absolute inset-0 z-0">
-        <img src={heroWave} alt="" className="w-full h-full object-cover opacity-40" />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 25% 6%), transparent 60%)" }} />
-      </div>
+      {/* Decorative blobs */}
+      <img src={blob1} alt="" className="absolute top-10 right-0 w-72 md:w-96 opacity-60 pointer-events-none" />
+      <img src={blob2} alt="" className="absolute bottom-0 left-0 w-56 md:w-72 opacity-50 pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col items-center text-center gap-8">
-        <div className="slide-number mb-4">Propozycja współpracy</div>
+      <div className="relative z-10 flex flex-col gap-8 max-w-2xl">
+        <div className="slide-number mb-2">Propozycja współpracy</div>
 
-        <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-foreground">
+        <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight">
           Social
-          <span className="text-slide-accent glow-text"> Surfer</span>
+          <span className="gradient-text"> Surfer</span>
         </h1>
 
-        <p className="max-w-2xl text-xl md:text-2xl text-muted-foreground leading-relaxed">
+        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
           Aplikacja łącząca internetowe społeczności w realnym świecie
           poprzez kreatywne quizy i wspólne zainteresowania.
         </p>
 
-        <div className="mt-8 glass-card px-8 py-4 inline-flex items-center gap-3">
-          <div className="w-2 h-2 rounded-full bg-slide-accent animate-pulse" />
+        <div className="mt-4 inline-flex items-center gap-3 px-6 py-3 rounded-full border border-border bg-card">
+          <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
           <span className="text-muted-foreground text-sm font-display tracking-wide">
             Przegląd propozycji współpracy sponsoringowo-promocyjnej
           </span>

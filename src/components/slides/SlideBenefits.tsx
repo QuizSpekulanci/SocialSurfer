@@ -19,7 +19,7 @@ const SlideBenefits = () => {
           </div>
           <h3 className="font-display text-lg font-semibold text-foreground">Wzrost popularności</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-
+            Przyciągnij nowych widzów z grupy osób używających naszej aplikacji, którzy znajdą tam twoje community i w ten sposób zapoznają się z kanałem.
           </p>
         </div>
 

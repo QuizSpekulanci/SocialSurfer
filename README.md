@@ -64,6 +64,23 @@ This project is built with:
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
+## Deploy to GitHub Pages
+
+This repository includes a workflow at [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml) that automatically deploys on every push to `main`.
+
+### One-time manual setup in GitHub
+
+1. Go to your repository on GitHub.
+2. Open **Settings -> Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+
+After that, push to `main` and the site will deploy automatically.
+
+### Notes
+
+- The workflow sets the correct Vite `base` path for project/user pages at build time.
+- SPA fallback is enabled by publishing `dist/404.html` as a copy of `dist/index.html`.
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!

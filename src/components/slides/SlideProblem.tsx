@@ -15,7 +15,8 @@ const SlideProblem = () => {
       <div className="grid md:grid-cols-2 gap-10 items-start">
         <div className="flex flex-col gap-6">
           <div className="glass-card p-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="gradient-text font-display font-semibold text-lg mb-2">Izolacja społeczna</div>
+            <div className="gradient-text font-display font-semibold text-lg mb-2">
+</div>
             <p className="text-muted-foreground leading-relaxed">
               W internecie istnieją setki społeczności o wspólnych zainteresowaniach, które nigdy nie mają okazji spotkać się na żywo i spędzić razem czas.
             </p>
@@ -42,8 +43,7 @@ const SlideProblem = () => {
           </div>
         </div>
       </div>
-    </SlideLayout>
-  );
+    </SlideLayout>);
 };
 
 export default SlideProblem;

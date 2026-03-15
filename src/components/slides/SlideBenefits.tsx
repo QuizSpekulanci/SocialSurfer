@@ -19,7 +19,7 @@ const SlideBenefits = () => {
           </div>
           <h3 className="font-display text-lg font-semibold text-foreground">Wzrost popularności</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Przyciągnij nowych widzów zachęcając obecnych użytkowników do budowania społeczności wokół konkretnych zainteresowań.
+
           </p>
         </div>
 
@@ -43,8 +43,8 @@ const SlideBenefits = () => {
           </p>
         </div>
       </div>
-    </SlideLayout>
-  );
+    </SlideLayout>);
+
 };
 
 export default SlideBenefits;

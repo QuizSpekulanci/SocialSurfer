@@ -8,8 +8,8 @@ const SlideModeration = () => {
       <img src={blob1} alt="" className="absolute bottom-0 right-0 w-56 opacity-30 pointer-events-none" />
 
       <div className="slide-number mb-4">FAQ</div>
-      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
-        Moderacja i <span className="gradient-text">bezpieczeństwo</span>
+      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Moderacja i bezpieczeństwo 
+        <span className="gradient-text">bezpieczeństwo</span>
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10 items-start">
@@ -57,8 +57,8 @@ const SlideModeration = () => {
           </div>
         </div>
       </div>
-    </SlideLayout>
-  );
+    </SlideLayout>);
+
 };
 
 export default SlideModeration;

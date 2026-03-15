@@ -8,7 +8,7 @@ const SlideSolutions = () => {
       <img src={blob1} alt="" className="absolute top-20 right-0 w-48 opacity-30 pointer-events-none" />
 
       <div className="slide-number mb-4">Rozwiązania</div>
-      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Nasze rozwiązania 
+      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Nasze rozwiązania
         <span className="gradient-text">rozwiązania</span>
       </h2>
 

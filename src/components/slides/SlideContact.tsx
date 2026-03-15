@@ -14,26 +14,26 @@ const SlideContact = () => {
 
       <div className="grid md:grid-cols-2 gap-10 items-start">
         <div className="glass-card p-8 flex flex-col gap-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 min-w-0">
             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
               <Mail className="w-6 h-6 text-primary" />
             </div>
-            <div>
+            <div className="min-w-0">
               <p className="text-sm text-muted-foreground">Email</p>
               <a
                 href="mailto:maciej.pancewicz@socialsurfer.eu"
-                className="font-display text-lg text-foreground hover:text-primary transition-colors"
+                className="font-display text-base md:text-lg text-foreground hover:text-primary transition-colors break-all"
               >
                 maciej.pancewicz@socialsurfer.eu
               </a>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 min-w-0">
             <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
               <Phone className="w-6 h-6 text-accent" />
             </div>
-            <div>
+            <div className="min-w-0">
               <p className="text-sm text-muted-foreground">Telefon</p>
               <a href="tel:+48505870491" className="font-display text-lg text-foreground hover:text-accent transition-colors">
                 505 870 491

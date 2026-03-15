@@ -8,12 +8,14 @@ import SlideBenefits from "@/components/slides/SlideBenefits";
 import SlideModeration from "@/components/slides/SlideModeration";
 import SlideTeam from "@/components/slides/SlideTeam";
 import SlideContact from "@/components/slides/SlideContact";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const slides = [SlideHero, SlideProblem, SlideSolutions, SlideYouTube, SlideBenefits, SlideModeration, SlideTeam, SlideContact];
 
 const Index = () => {
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const isMobile = useIsMobile();
 
   const goTo = useCallback(
     (index: number) => {
@@ -41,6 +43,8 @@ const Index = () => {
   }, [current, goTo]);
 
   useEffect(() => {
+    if (isMobile) return;
+
     let touchStartY = 0;
     const handleTouchStart = (e: TouchEvent) => {
       touchStartY = e.touches[0].clientY;
@@ -57,9 +61,11 @@ const Index = () => {
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [current, goTo]);
+  }, [current, goTo, isMobile]);
 
   useEffect(() => {
+    if (isMobile) return;
+
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault();
       if (Math.abs(e.deltaY) > 30) {
@@ -68,12 +74,12 @@ const Index = () => {
     };
     window.addEventListener("wheel", handleWheel, { passive: false });
     return () => window.removeEventListener("wheel", handleWheel);
-  }, [current, goTo]);
+  }, [current, goTo, isMobile]);
 
   const CurrentSlide = slides[current];
 
   return (
-    <div className="h-screen w-screen overflow-hidden bg-background relative">
+    <div className="h-[100dvh] w-screen overflow-y-auto md:overflow-hidden bg-background relative">
       {/* Slide */}
       <div
         className="w-full h-full transition-opacity duration-500"

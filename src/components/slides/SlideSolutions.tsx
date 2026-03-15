@@ -21,10 +21,10 @@ const SlideSolutions = () => {
           <p className="text-muted-foreground leading-relaxed text-lg">
             Użytkownicy dołączają do aplikacji przez link twórcy i automatycznie stają się częścią jego community. Mogą przeglądać i filtrować profile innych uczestników, budując realne relacje wokół wspólnych pasji.
           </p>
-          <div className="flex gap-3 mt-2">
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-primary/10 text-primary">Auto-join</span>
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-primary/10 text-primary">Filtrowanie</span>
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-primary/10 text-primary">Profile</span>
+          <div className="flex gap-3 mt-2 flex-wrap">
+            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs text-center font-display bg-primary/10 text-primary">Auto-join</span>
+            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs text-center font-display bg-primary/10 text-primary">Filtrowanie</span>
+            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs text-center font-display bg-primary/10 text-primary">Profile</span>
           </div>
         </div>
 
@@ -36,10 +36,10 @@ const SlideSolutions = () => {
           <p className="text-muted-foreground leading-relaxed text-lg">
             Każdy użytkownik może dodać do swojego profilu kreatywne quizy, pytania wielokrotnego wyboru lub pytania otwarte — co pozwala poznać drugą osobę w angażujący i zabawny sposób.
           </p>
-          <div className="flex gap-3 mt-2">
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Quiz</span>
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Pytania otwarte</span>
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Pytania zamknięte</span>
+          <div className="flex gap-3 mt-2 flex-wrap">
+            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs text-center font-display bg-accent/10 text-accent">Quiz</span>
+            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs text-center font-display bg-accent/10 text-accent">Pytania otwarte</span>
+            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs text-center font-display bg-accent/10 text-accent">Pytania zamknięte</span>
           </div>
         </div>
       </div>

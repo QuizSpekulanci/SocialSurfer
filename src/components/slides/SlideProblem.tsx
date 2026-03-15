@@ -5,8 +5,6 @@ import coffee from "@/assets/coffee.png";
 const SlideProblem = () => {
   return (
     <SlideLayout slideNumber={2} totalSlides={8}>
-      <img src={blob3} alt="" className="absolute bottom-0 right-0 w-64 opacity-40 pointer-events-none" />
-
       <div className="slide-number mb-4">Problem</div>
       <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
         Jaki problem rozwiązuje

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import SlideHero from "@/components/slides/SlideHero";
 import SlideProblem from "@/components/slides/SlideProblem";
@@ -16,6 +16,7 @@ const Index = () => {
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const isMobile = useIsMobile();
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const goTo = useCallback(
     (index: number) => {
@@ -64,6 +65,11 @@ const Index = () => {
   }, [current, goTo, isMobile]);
 
   useEffect(() => {
+    if (!isMobile) return;
+    containerRef.current?.scrollTo({ top: 0, behavior: "auto" });
+  }, [current, isMobile]);
+
+  useEffect(() => {
     if (isMobile) return;
 
     const handleWheel = (e: WheelEvent) => {
@@ -79,7 +85,7 @@ const Index = () => {
   const CurrentSlide = slides[current];
 
   return (
-    <div className="h-[100dvh] w-screen overflow-y-auto md:overflow-hidden bg-background relative">
+    <div ref={containerRef} className="h-[100dvh] w-screen overflow-y-auto md:overflow-hidden bg-background relative">
       {/* Slide */}
       <div
         className="w-full h-full transition-opacity duration-500"

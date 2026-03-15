@@ -4,7 +4,7 @@ import { Users, MessageCircleQuestion } from "lucide-react";
 
 const SlideSolutions = () => {
   return (
-    <SlideLayout slideNumber={3} totalSlides={7}>
+    <SlideLayout slideNumber={3} totalSlides={8}>
       <img src={blob1} alt="" className="absolute top-20 right-0 w-48 opacity-30 pointer-events-none" />
 
       <div className="slide-number mb-4">Rozwiązania</div>

@@ -5,7 +5,7 @@ import { TrendingUp, Heart, Star } from "lucide-react";
 
 const SlideBenefits = () => {
   return (
-    <SlideLayout slideNumber={5} totalSlides={7}>
+    <SlideLayout slideNumber={5} totalSlides={8}>
       <div className="slide-number mb-4">Korzyści</div>
       <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Korzyści dla
         <span className="gradient-text"> twórców</span>

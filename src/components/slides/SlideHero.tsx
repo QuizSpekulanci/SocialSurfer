@@ -4,7 +4,7 @@ import blob2 from "@/assets/blob-decoration-2.png";
 
 const SlideHero = () => {
   return (
-    <SlideLayout slideNumber={1} totalSlides={7}>
+    <SlideLayout slideNumber={1} totalSlides={8}>
       {/* Decorative blobs */}
       <img src={blob1} alt="" className="absolute top-10 right-0 w-72 md:w-96 opacity-60 pointer-events-none" />
       <img src={blob2} alt="" className="absolute bottom-0 left-0 w-56 md:w-72 opacity-50 pointer-events-none" />

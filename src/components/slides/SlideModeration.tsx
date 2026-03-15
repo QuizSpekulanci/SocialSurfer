@@ -4,7 +4,7 @@ import { ShieldCheck, Flag, Eye } from "lucide-react";
 
 const SlideModeration = () => {
   return (
-    <SlideLayout slideNumber={6} totalSlides={7}>
+    <SlideLayout slideNumber={6} totalSlides={8}>
       <img src={blob1} alt="" className="absolute bottom-0 right-0 w-56 opacity-30 pointer-events-none" />
 
       <div className="slide-number mb-4">FAQ</div>

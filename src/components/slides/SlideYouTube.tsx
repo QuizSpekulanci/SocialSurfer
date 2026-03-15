@@ -5,7 +5,7 @@ import { Play, Calendar } from "lucide-react";
 
 const SlideYouTube = () => {
   return (
-    <SlideLayout slideNumber={4} totalSlides={7}>
+    <SlideLayout slideNumber={4} totalSlides={8}>
       <img src={blob2} alt="" className="absolute bottom-10 right-0 w-64 opacity-40 pointer-events-none" />
 
       <div className="slide-number mb-4">YouTube</div>

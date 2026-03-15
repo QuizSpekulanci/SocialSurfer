@@ -7,8 +7,9 @@ import SlideYouTube from "@/components/slides/SlideYouTube";
 import SlideBenefits from "@/components/slides/SlideBenefits";
 import SlideModeration from "@/components/slides/SlideModeration";
 import SlideTeam from "@/components/slides/SlideTeam";
+import SlideContact from "@/components/slides/SlideContact";
 
-const slides = [SlideHero, SlideProblem, SlideSolutions, SlideYouTube, SlideBenefits, SlideModeration, SlideTeam];
+const slides = [SlideHero, SlideProblem, SlideSolutions, SlideYouTube, SlideBenefits, SlideModeration, SlideTeam, SlideContact];
 
 const Index = () => {
   const [current, setCurrent] = useState(0);

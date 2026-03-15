@@ -40,7 +40,7 @@ const team: TeamMember[] = [
 
 const SlideTeam = () => {
   return (
-    <SlideLayout slideNumber={7} totalSlides={7}>
+    <SlideLayout slideNumber={7} totalSlides={8}>
       <img src={blob2} alt="" className="absolute top-0 right-0 w-48 opacity-30 pointer-events-none" />
       <img src={blob3} alt="" className="absolute bottom-0 left-0 w-40 opacity-25 pointer-events-none" />
 

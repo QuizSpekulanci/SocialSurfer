@@ -8,8 +8,8 @@ const SlideBenefits = () => {
       <img src={blob3} alt="" className="absolute top-16 right-0 w-56 opacity-30 pointer-events-none" />
 
       <div className="slide-number mb-4">Korzyści</div>
-      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Korzyści dla twórców
-        <span className="gradient-text">twórców</span>
+      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Korzyści dla
+        <span className="gradient-text"> twórców</span>
       </h2>
 
       <div className="grid md:grid-cols-3 gap-8">

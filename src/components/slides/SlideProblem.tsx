@@ -22,7 +22,7 @@ const SlideProblem = () => {
           </div>
 
           <div className="glass-card p-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="gradient-text font-display font-semibold text-lg mb-2">Brak kreatywności</div>
+            <div className="gradient-text font-display font-semibold text-lg mb-2">Wady istniejących rozwiązań</div>
             <p className="text-muted-foreground leading-relaxed">
               Istniejące platformy do poznawania ludzi nie oferują kreatywnych narzędzi i nie zawężają puli potencjalnych znajomości do osób o wspólnych pasjach.
             </p>

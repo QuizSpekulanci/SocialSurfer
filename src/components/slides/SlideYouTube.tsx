@@ -1,17 +1,19 @@
 import SlideLayout from "@/components/SlideLayout";
-import youtubeImg from "@/assets/youtube-illustration.jpg";
+import blob2 from "@/assets/blob-decoration-2.png";
 import { Play, Calendar } from "lucide-react";
 
 const SlideYouTube = () => {
   return (
     <SlideLayout slideNumber={4} totalSlides={7}>
-      <div className="slide-number mb-6">YouTube</div>
-      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-12">
-        Możliwości dla kanałów <span className="text-slide-accent">YouTube</span>
+      <img src={blob2} alt="" className="absolute bottom-10 right-0 w-64 opacity-40 pointer-events-none" />
+
+      <div className="slide-number mb-4">YouTube</div>
+      <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
+        Możliwości dla kanałów <span className="gradient-text">YouTube</span>
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col gap-8">
+      <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="flex flex-col gap-6">
           <div className="glass-card p-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center">
@@ -26,8 +28,8 @@ const SlideYouTube = () => {
 
           <div className="glass-card p-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-slide-accent/10 flex items-center justify-center">
-                <Calendar className="w-6 h-6 text-slide-accent" />
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: "var(--slide-gradient-bar)" }}>
+                <Calendar className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground">Wydarzenia dla społeczności</h3>
             </div>
@@ -37,8 +39,10 @@ const SlideYouTube = () => {
           </div>
         </div>
 
-        <div className="flex justify-center animate-slide-in-right">
-          <img src={youtubeImg} alt="YouTube integration" className="rounded-2xl max-w-md w-full glow-accent" />
+        <div className="flex justify-center items-center">
+          <div className="w-72 h-48 rounded-2xl flex items-center justify-center" style={{ background: "var(--slide-gradient-bar)" }}>
+            <Play className="w-16 h-16 text-white" />
+          </div>
         </div>
       </div>
     </SlideLayout>

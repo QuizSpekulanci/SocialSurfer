@@ -21,11 +21,6 @@ const SlideLayout = ({ children, slideNumber, totalSlides }: SlideLayoutProps) =
       <div className="absolute bottom-6 right-8 slide-number">
         {String(slideNumber).padStart(2, "0")} / {String(totalSlides).padStart(2, "0")}
       </div>
-
-      {/* Brand mark */}
-      <div className="absolute bottom-6 left-8 slide-number">
-        Social Surfer
-      </div>
     </div>
   );
 };

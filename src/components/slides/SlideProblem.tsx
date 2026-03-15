@@ -1,5 +1,6 @@
 import SlideLayout from "@/components/SlideLayout";
 import blob3 from "@/assets/blob-decoration-3.png";
+import coffee from "@/assets/coffee.png";
 
 const SlideProblem = () => {
   return (
@@ -37,8 +38,8 @@ const SlideProblem = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="w-64 h-64 rounded-3xl overflow-hidden" style={{ background: "var(--slide-gradient-bar)" }}>
-            <div className="w-full h-full flex items-center justify-center text-white/80 text-6xl font-display font-bold">?</div>
+          <div className="w-64 md:w-72 lg:w-80 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <img src={coffee} alt="Ośmiornica pijąca kawę" />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import SlideLayout from "@/components/SlideLayout";
 import blob1 from "@/assets/blob-decoration-1.png";
-import { Users, Brain } from "lucide-react";
+import { Users, MessageCircleQuestion } from "lucide-react";
 
 const SlideSolutions = () => {
   return (
@@ -19,7 +19,7 @@ const SlideSolutions = () => {
           </div>
           <h3 className="font-display text-2xl font-semibold text-foreground">Community</h3>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Użytkownicy dołączają do aplikacji przez link twórcy i automatycznie stają się częścią jego społeczności. Mogą przeglądać i filtrować profile innych uczestników, budując realne relacje wokół wspólnych pasji.
+            Użytkownicy dołączają do aplikacji przez link twórcy i automatycznie stają się częścią jego community. Mogą przeglądać i filtrować profile innych uczestników, budując realne relacje wokół wspólnych pasji.
           </p>
           <div className="flex gap-3 mt-2">
             <span className="px-3 py-1 rounded-full text-xs font-display bg-primary/10 text-primary">Auto-join</span>
@@ -30,7 +30,7 @@ const SlideSolutions = () => {
 
         <div className="glass-card p-8 flex flex-col gap-5 animate-fade-in" style={{ animationDelay: "0.3s" }}>
           <div className="w-14 h-14 rounded-xl flex items-center justify-center" style={{ background: "linear-gradient(135deg, hsl(310 80% 55%), hsl(270 70% 55%))" }}>
-            <Brain className="w-7 h-7 text-white" />
+            <MessageCircleQuestion className="w-7 h-7 text-white" />
           </div>
           <h3 className="font-display text-2xl font-semibold text-foreground">Quizy</h3>
           <p className="text-muted-foreground leading-relaxed text-lg">
@@ -39,7 +39,7 @@ const SlideSolutions = () => {
           <div className="flex gap-3 mt-2">
             <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Quiz</span>
             <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Pytania otwarte</span>
-            <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Gamifikacja</span>
+            <span className="px-3 py-1 rounded-full text-xs font-display bg-accent/10 text-accent">Pytania zamknięte</span>
           </div>
         </div>
       </div>

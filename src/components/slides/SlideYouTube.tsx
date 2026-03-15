@@ -1,5 +1,6 @@
 import SlideLayout from "@/components/SlideLayout";
 import blob2 from "@/assets/blob-decoration-2.png";
+import surfImage from "@/assets/Surf.png";
 import { Play, Calendar } from "lucide-react";
 
 const SlideYouTube = () => {
@@ -22,7 +23,7 @@ const SlideYouTube = () => {
               <h3 className="font-display text-xl font-semibold text-foreground">Społeczność wokół kanału</h3>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Twórz dedykowaną społeczność, w której widzowie mogą wzajemnie przeglądać swoje profile i rozwiązywać tematyczne quizy — budując więzi, które wykraczają poza komentarze pod filmami.
+              Twórz dedykowaną społeczność, w której widzowie mogą wzajemnie przeglądać swoje profile i rozwiązywać tematyczne quizy w tym te, które sam stworzysz — budując więzi, które wykraczają poza komentarze pod filmami i wspólny discord.
             </p>
           </div>
 
@@ -40,8 +41,8 @@ const SlideYouTube = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="w-72 h-48 rounded-2xl flex items-center justify-center" style={{ background: "var(--slide-gradient-bar)" }}>
-            <Play className="w-16 h-16 text-white" />
+          <div className="w-72 rounded-2xl overflow-hidden animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <img src={surfImage} alt="Podgląd Social Surfer" className="w-full h-auto object-cover" />
           </div>
         </div>
       </div>

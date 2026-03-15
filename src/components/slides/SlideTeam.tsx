@@ -14,27 +14,27 @@ interface TeamMember {
 const team: TeamMember[] = [
 {
   name: "Maciek Pancewicz",
-  role: "CEO & Business Strategy",
+  role: "Cofunder",
   icon: Scale,
   gradient: "linear-gradient(135deg, hsl(24 95% 53%), hsl(340 85% 55%))",
   description:
-  "Absolwent wydziału prawa i nauk ekonomicznych UW. Autor wizji Social Surfer i architekt modelu biznesowego. Odpowiada za stronę biznesową i compliance prawny. Laureat Ogólnopolskiej Olimpiady Historycznej."
+  "Absolwent Wydziału Prawa i Wydziału nauk ekonomicznych UW.  Autor wizji aplikacji SocialSurfer i architekt modelu biznesowego oraz strategii partnerstw. Odpowiada za stronę biznesową i compliance prawny Aplikacji. W wolnym czasie amator gier planszowych i pasjonat historii (w której zdobył tytuł laureata Ogólnopolskiej Olimpiady w Liceum)."
 },
 {
-  name: "Wojtek",
-  role: "Senior Full-Stack Developer",
+  name: "Wojtek Twarowski",
+  role: "Cofunder",
   icon: Code,
   gradient: "linear-gradient(135deg, hsl(310 80% 55%), hsl(270 70% 55%))",
   description:
-  "Senior developer z bogatym doświadczeniem freelancowym. Twórca kompleksowych aplikacji mobilnych i webowych od A do Z. Autor designu i full-stackowego frontendu Social Surfer. Ekspert inżynierii dźwięku."
+  "Full-stack developer z bogatym doświadczeniem freelancerskim. Przed zaangażowaniem się w tworzenie aplikacji SociaSurfer realizował kompleksowe projekty IT, w swoim portfolio ma już stworzone aplikacje mobilne i webowe od A do Z. Ekspert inżynierii dźwięku i produkcji multimediów; w wolnym czasie pasjonat fotografii profesjonalnej."
 },
 {
-  name: "Janek",
-  role: "Backend Specialist",
+  name: "Janek Jędrzejewski",
+  role: "Cofunder",
   icon: Cpu,
   gradient: "linear-gradient(135deg, hsl(240 70% 55%), hsl(190 80% 50%))",
   description:
-  "Absolwent informatyki Politechniki Warszawskiej. Doświadczenie w prestiżowej korporacji software'owej. Współautor architektury backendowej i algorytmów matchowania. Optymalizator modeli predykcyjnych."
+  "Absolwent informatyki Politechniki Warszawskiej, specjalista backendowy. Doświadczenie zdobył w prestiżowej korporacji software'owej, ale poszukuje ambitniejszych wyzwań, gdzie stworzy własny produkt. Współautor architektury backendowej i algorytmów matchowania SocialSurfer, optymalizator modeli predykcyjnych. W wolnym czasie czempion brydża oraz pasjonat wyścigów Formuły 1."
 }];
 
 

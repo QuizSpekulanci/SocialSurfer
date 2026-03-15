@@ -9,7 +9,7 @@ const SlideModeration = () => {
 
       <div className="slide-number mb-4">FAQ</div>
       <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">Moderacja i bezpieczeństwo 
-        <span className="gradient-text">bezpieczeństwo</span>
+        <span className="gradient-text"></span>
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10 items-start">

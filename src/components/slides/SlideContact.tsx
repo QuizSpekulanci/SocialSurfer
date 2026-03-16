@@ -48,7 +48,7 @@ const SlideContact = () => {
           </div>
           <h3 className="font-display text-2xl font-semibold text-foreground">Zapraszamy do kontaktu</h3>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Chętnie opowiemy więcej o Social Surfer i odpowiemy na wszystkie pytania dotyczące współpracy.
+            Chętnie opowiemy więcej o SocialSurfer i odpowiemy na wszystkie pytania dotyczące współpracy.
           </p>
         </div>
       </div>

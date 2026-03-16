@@ -38,19 +38,6 @@ const SlideModeration = () => {
             </div>
           </div>
 
-          <div className="flex items-start gap-5 glass-card p-6 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 mt-1" style={{ background: "linear-gradient(135deg, hsl(240 70% 55%), hsl(270 80% 60%))" }}>
-              <Eye className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h3 className="font-display text-lg font-semibold text-foreground mb-2">Transparentność</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Priorytetem jest bezpieczeństwo naszych użytkowników. Stale rozwijamy i udoskonalamy nasze mechanizmy ochrony społeczności.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className="flex justify-center items-center">
           <div className="w-56 h-56 rounded-3xl flex items-center justify-center" style={{ background: "var(--slide-gradient-bar)" }}>
             <ShieldCheck className="w-20 h-20 text-white" />

@@ -13,8 +13,7 @@ const SlideHero = () => {
         <div className="slide-number mb-2">Propozycja współpracy</div>
 
         <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground leading-tight">
-          Social
-          <span className="gradient-text"> Surfer</span>
+          <span className="gradient-text">SocialSurfer</span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">

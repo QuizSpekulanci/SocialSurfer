@@ -42,7 +42,7 @@ const SlideYouTube = () => {
 
         <div className="flex justify-center items-center">
           <div className="w-72 rounded-2xl overflow-hidden animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <img src={surfImage} alt="Podgląd Social Surfer" className="w-full h-auto object-cover" />
+            <img src={surfImage} alt="Ośmiornica surfująca" className="w-full h-auto object-cover" />
           </div>
         </div>
       </div>

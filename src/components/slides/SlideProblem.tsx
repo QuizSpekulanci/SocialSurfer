@@ -8,7 +8,7 @@ const SlideProblem = () => {
       <div className="slide-number mb-4">Problem</div>
       <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
         Jaki problem rozwiązuje
-        <span className="gradient-text"> Social Surfer</span>?
+        <span className="gradient-text"> SocialSurfer</span>?
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10 items-start">
@@ -26,6 +26,7 @@ const SlideProblem = () => {
               Istniejące platformy do poznawania ludzi nie oferują kreatywnych narzędzi i nie zawężają puli potencjalnych znajomości do osób o wspólnych pasjach.
             </p>
           </div>
+        </div>
 
         <div className="flex justify-center items-center">
           <div className="w-64 md:w-72 lg:w-80 animate-fade-in" style={{ animationDelay: "0.4s" }}>

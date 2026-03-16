@@ -9,7 +9,7 @@ const SlideContact = () => {
 
       <div className="slide-number mb-4">Kontakt</div>
       <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
-        Skontaktuj się z <span className="gradient-text">nami</span>
+        <span className="gradient-text">Skontaktuj się </span> z nami
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10 items-start">

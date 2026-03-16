@@ -37,6 +37,7 @@ const SlideModeration = () => {
               </p>
             </div>
           </div>
+        </div>
 
         <div className="flex justify-center items-center">
           <div className="w-56 h-56 rounded-3xl flex items-center justify-center" style={{ background: "var(--slide-gradient-bar)" }}>

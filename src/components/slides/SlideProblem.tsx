@@ -27,14 +27,6 @@ const SlideProblem = () => {
             </p>
           </div>
 
-          <div className="glass-card p-6 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <div className="gradient-text font-display font-semibold text-lg mb-2">Toksyczny model</div>
-            <p className="text-muted-foreground leading-relaxed">
-              Konkurencyjne aplikacje opierają model biznesowy na nieosiągalnych standardach, aby użytkownicy uzależniali się i ciągle wracali.
-            </p>
-          </div>
-        </div>
-
         <div className="flex justify-center items-center">
           <div className="w-64 md:w-72 lg:w-80 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <img src={coffee} alt="Ośmiornica pijąca kawę" />
